@@ -16,6 +16,7 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
+            source $HOME/.bashrc
             poetry install
       - save_cache:
           key: deps-{{ checksum "poetry.lock" }}
@@ -24,6 +25,7 @@ jobs:
       - run:
           name: Run Pytest
           command: |
+            source $HOME/.bashrc
             poetry run pytest tests/
 
 workflows:
