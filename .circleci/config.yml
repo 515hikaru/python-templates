@@ -6,7 +6,7 @@ jobs:
   # Useful when a PR is open, for example
   build-and-test:
     docker:
-      - image: circleci/python:3.8.0
+      - image: 515hikaru/poetry-preview:latest
 
     steps:
       - checkout
@@ -16,7 +16,6 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
-            poetry self:update --preview
             poetry install
       - save_cache:
           key: deps-{{ checksum "poetry.lock" }}
