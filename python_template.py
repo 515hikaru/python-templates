@@ -2,6 +2,8 @@
 Awesome package
 """
 
+__version__ = "1.0.2"
+
 
 def fizzbuzz(num):
     """
