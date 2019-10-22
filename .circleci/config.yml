@@ -11,15 +11,16 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: 
+          keys:
             - deps-{{ checksum "poetry.lock" }}
       - run:
           name: Install Dependencies
           command: |
+            poetry self:update --preview
             poetry install
       - save_cache:
           key: deps-{{ checksum "poetry.lock" }}
-          paths: 
+          paths:
             - /home/circleci/.cache/pypoetry/virtualenvs
       - run:
           name: Run Pytest
