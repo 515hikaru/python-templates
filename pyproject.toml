@@ -29,6 +29,10 @@ exclude = '''
   | dist
 )/
 '''
+
+[tool.poetry.scripts]
+sample = "python_template:main"
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
