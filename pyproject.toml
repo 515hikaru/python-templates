@@ -11,6 +11,7 @@ python = "^3.8"
 [tool.poetry.dev-dependencies]
 black = "^19.3b0"
 pylint = "^2.4.3"
+pytest = "^5.2.1"
 
 [tool.black]
 line-length = 88
