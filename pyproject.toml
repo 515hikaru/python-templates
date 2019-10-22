@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "python-template"
 version = "1.0.0"
-description = "Awesome project."
+description = "This is a project template."
 authors = ["515hikaru <12kojima.takahiro@gmail.com>"]
 license = "MIT"
 
