@@ -6,7 +6,7 @@ jobs:
   # Useful when a PR is open, for example
   build-and-test:
     docker:
-      - image: 515hikaru/poetry-preview:latest
+      - image: circleci/python:3.8.2
 
     steps:
       - checkout
