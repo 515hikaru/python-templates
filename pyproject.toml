@@ -9,9 +9,9 @@ license = "MIT"
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-black = {allow-prereleases = true, version = ">19"}
 pylint = "^2.4.3"
 pytest = "^5.2.1"
+black = {version = "^19.10b0", allow-prereleases = true}
 
 [tool.black]
 line-length = 88
